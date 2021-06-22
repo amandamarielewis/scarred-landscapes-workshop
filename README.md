@@ -56,13 +56,20 @@ If all is working well, we're going to make a new Arduino file which will eventu
 ## Seeing up your screen : Connecting the OLED screen
 
 1. Wiring for OLED screen
-2. OLED library
+2. Install the U8G2lib library
+
+![Image of U8G2 library](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/OLEDArduinoLibrary.png)
+
+3. Open the PrintTest example from the library. Copy and paste the following underneath the #include and run the code.
 
 ```
 U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_DEV_0|U8G_I2C_OPT_FAST);	// Dev 0, Fast I2C / TWI
 ```
+You should see "Hello World!" written on your screen.
+Alternatively, you can also run the test code included on this Github to see the full extend of what kinds of animations and characters you can use on the OLED screens.
 
-3. Arduino code
+4. Now, we are going to have the data we got from our dust sensors write onto the OLED screens.
+
 
 ## Making it portable : Saving your data to SD cards
 
