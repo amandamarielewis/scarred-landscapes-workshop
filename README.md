@@ -29,6 +29,9 @@ Resources for the Study of Scarred Landscapes workshop for NØ SCHOOL on June 28
 
 ## Getting data : Setting up the Dust sensor
 
+![Image of Dust sensor setup](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/ASSL_workshop_dustonly_bb.jpg)
+
+
 1. Wiring for PM2.5 sensor: Sharp GP2Y1010AU0F
 
     Wire 1 - Blue is connected to power through the resistor and ground via the capacitor.
@@ -45,7 +48,7 @@ Resources for the Study of Scarred Landscapes workshop for NØ SCHOOL on June 28
 
 If needed, solder the wires onto the extra pins that come with your Arduino and cut them separately.  
 
-2. Download Sharp dust sensor library
+2. Download Sharp dust sensor library. [Check out the library documentation here.](https://github.com/luciansabo/GP2YDustSensor)
 3. Open example code titled "Basic Reading" (File > Examples > Sharp GP2Y Sensor > BasicReading)
 4. Make sure the LED pin and Analog output pin match your wiring setup, then compile and upload the code
 5. Open the serial monitor to see the readings from your sensor
