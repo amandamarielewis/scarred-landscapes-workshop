@@ -60,6 +60,9 @@ If all is working well, we're going to make a new Arduino file which will eventu
 
 ## Seeing up your screen : Connecting the OLED screen
 
+![Image of Dust sensor and OLED setup](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/ASSL_workshop_dustoled_bb.jpg)
+
+
 1. Wiring for OLED screen
 2. Install the U8G2lib library
 
