@@ -1,5 +1,5 @@
 # Devices for the Study of Scarred Landscapes
-Resources for the Study of Scarred Landscapes workshop for NØ SCHOOL 2021.
+Resources for the Study of Scarred Landscapes workshop for NØ SCHOOL on June 28, 2021.
 
 [Link to workshop presentation.](https://docs.google.com/presentation/d/1cTWqstJ5dMBbrx4FjO5AvwVebNW-ub3vGkTKbLXm1rg/edit?usp=sharing)
 
@@ -35,13 +35,15 @@ Resources for the Study of Scarred Landscapes workshop for NØ SCHOOL 2021.
 
     Wire 2 - Green is wired directly to ground
 
-    Wire 3 - White is wired to a digital output - in this case - D12 on the 101
+    Wire 3 - White is wired to a digital output - in this case - D10 on the 101
 
     Wire 4 - Yellow is wired directly to ground. 
 
     Wire 5 - Black is wired to an Analog Input, in this case A0 on the 101. A 10k ohm pulldown resistor is used so the value doesn't float.
 
     Wire 6 - Red is wired to power directly.
+
+If needed, solder the wires onto the extra pins that come with your Arduino and cut them separately.  
 
 2. Download Sharp dust sensor library
 3. Open example code titled "Basic Reading" (File > Examples > Sharp GP2Y Sensor > BasicReading)
