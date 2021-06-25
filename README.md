@@ -26,6 +26,11 @@ Resources for the Study of Scarred Landscapes workshop for NØ SCHOOL on June 28
 
 * Go to (Tools > Board) and make sure "Arduino Uno" is selected
 
+* Check to see your Arduino is recognized by your computer
+
+![Image of selecting the correct serial](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/selectarduino.png)
+
+If your Arduino isn't recognized immediately, you may have to [download the C3H40 driver for your computer.](https://sparks.gogo.co.nz/ch340.html)  Windows 10 users will definitely need to download and install the driver.
 
 ## Getting data : Setting up the Dust sensor
 
@@ -34,17 +39,12 @@ Resources for the Study of Scarred Landscapes workshop for NØ SCHOOL on June 28
 
 1. Wiring for PM2.5 sensor: Sharp GP2Y1010AU0F
 
-    Wire 1 - Blue is connected to power through the resistor and ground via the capacitor.
-
-    Wire 2 - Green is wired directly to ground
-
-    Wire 3 - White is wired to a digital output - in this case - D10 on the 101
-
-    Wire 4 - Yellow is wired directly to ground. 
-
-    Wire 5 - Black is wired to an Analog Input, in this case A0 on the 101. A 10k ohm pulldown resistor is used so the value doesn't float.
-
-    Wire 6 - Red is wired to power directly.
+    * Wire 1 - Blue is connected to power through the resistor and ground via the capacitor.
+    * Wire 2 - Green is wired directly to ground
+    * Wire 3 - White is wired to a digital output - in this case - D10 on the 101
+    * Wire 4 - Yellow is wired directly to ground. 
+    * Wire 5 - Black is wired to an Analog Input, in this case A0 on the 101. A 10k ohm pulldown resistor is used so the value doesn't float.
+    * Wire 6 - Red is wired to power directly.
 
 If needed, solder the wires onto the extra pins that come with your Arduino and cut them separately.  
 
@@ -82,4 +82,6 @@ Alternatively, you can also run the test code included on this Github to see the
 ## Making it portable : Saving your data to SD cards
 
 1. Wiring for SD card module
-2. Open code example in the Arduino SD library titled "Datalogger" (File > Examples > SD > Datalogger)
+2. Check the Arduino SD library. [You can find more documentation on the SD card library here.](https://www.arduino.cc/en/reference/SD)  Open code example in the Arduino SD library titled "Datalogger" (File > Examples > SD > Datalogger).  Run the example code and check the serial port to make sure your card is initializing properly.  You should see some sort of random number output.
+3. Check the SD card in your computer to make sure the data file is there and has been written.
+4. 
