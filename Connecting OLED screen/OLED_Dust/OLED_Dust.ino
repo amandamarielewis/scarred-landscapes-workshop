@@ -1,9 +1,15 @@
-#include <U8g2lib.h>
+//Libraries included in the sketch
+#include "U8glib.h"
+#include <U8glib.h>
 #include <Wire.h>
-#define time_delay 2000
-U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_DEV_0|U8G_I2C_OPT_FAST);  // Dev 0, Fast I2C / TWI
-
 #include <GP2YDustSensor.h>
+#include <SPI.h>
+#include <SD.h>
+
+#define time_delay 2000
+
+//Initialize our OLED screen
+U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_DEV_0|U8G_I2C_OPT_FAST);  // Dev 0, Fast I2C / TWI
 
 const uint8_t SHARP_LED_PIN = 10;   // Sharp Dust/particle sensor Led Pin
 const uint8_t SHARP_VO_PIN = A0;    // Sharp Dust/particle analog out pin used for reading 
@@ -45,7 +51,7 @@ void draw(void) {
   u8g.setPrintPos(0, 20); 
   
   // call procedure from base class, http://arduino.cc/en/Serial/Print
-  u8g.print("Dust density: ");
+  u8g.print("Dust: ");
   u8g.print(dustSensor.getDustDensity());
-  u8g.println(" ug/m3");
+  u8g.print(" ug/m3");
 }

@@ -9,10 +9,11 @@ Resources for the Study of Scarred Landscapes workshop for NØ SCHOOL on June 28
 * OLED Screen
 * PM2.5 sensor
 * Breadboard
-* SD Card + Arduino card reader module
+* SD Card + Arduino SD card reader module
 * Male Wires
 * Laptop
 * USB-A to USB-C converter (if needed for newer Macbooks)
+* SD card reader (if your computer doesn't have one)
 
 **Software**
 
@@ -26,7 +27,7 @@ Resources for the Study of Scarred Landscapes workshop for NØ SCHOOL on June 28
 
 * Go to (Tools > Board) and make sure "Arduino Uno" is selected
 
-* Check to see your Arduino is recognized by your computer
+* Check to see your Arduino is recognized by your computer.  You should see a new usbserial connection in this list, sometimes it will be labeled as an Arduino Uno.
 
 ![Image of selecting the correct serial](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/selectarduino.png)
 
@@ -48,10 +49,10 @@ If your Arduino isn't recognized immediately, you may have to [download the C3H4
 
 If needed, solder the wires onto the extra pins that come with your Arduino and cut them separately.  
 
-2. Download Sharp dust sensor library. [Check out the library documentation here.](https://github.com/luciansabo/GP2YDustSensor)
+2. Download Sharp dust sensor library. (Sketch > Include Library > Manage Libraries > Search for "Sharp Dust" and install) [Check out the library documentation here.](https://github.com/luciansabo/GP2YDustSensor)
 3. Open example code titled "Basic Reading" (File > Examples > Sharp GP2Y Sensor > BasicReading)
 4. Make sure the LED pin and Analog output pin match your wiring setup, then compile and upload the code
-5. Open the serial monitor to see the readings from your sensor
+5. Open the serial monitor to see the readings from your sensor.
 
 You should now see your sensor output! 
 
@@ -64,7 +65,7 @@ If all is working well, we're going to make a new Arduino file which will eventu
 
 
 1. Wiring for OLED screen
-2. Install the U8G2lib library
+2. Install the U8G2 library (Sketch > Include Library > Manage Libraries > Search for "U8G2lib" and install).
 
 ![Image of U8G2 library](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/OLEDArduinoLibrary.png)
 
@@ -81,7 +82,10 @@ Alternatively, you can also run the test code included on this Github to see the
 
 ## Making it portable : Saving your data to SD cards
 
-1. Wiring for SD card module
+1. Setup the wiring for your SD card module.
 2. Check the Arduino SD library. [You can find more documentation on the SD card library here.](https://www.arduino.cc/en/reference/SD)  Open code example in the Arduino SD library titled "Datalogger" (File > Examples > SD > Datalogger).  Run the example code and check the serial port to make sure your card is initializing properly.  You should see some sort of random number output.
-3. Check the SD card in your computer to make sure the data file is there and has been written.
-4. 
+3. Check the SD card in your computer to make sure the data file is there and has been written. 
+
+## Issues
+
+Any common issues or bug fixes will be noted here.
