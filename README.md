@@ -38,7 +38,7 @@ If your Arduino isn't recognized immediately, you may have to [download the C3H4
 ![Image of Dust sensor setup](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/ASSL_workshop_dustonly_bb.jpg)
 
 
-1. Wiring for PM2.5 sensor: Sharp GP2Y1010AU0F
+1. Wiring for PM2.5 sensor: Sharp GP2Y1010AU0F. [More info about the sensor here.](https://www.mouser.com/catalog/additional/Sharp_Microelectronics_Application_Guide_for_Sharp_GP2Y1026AU0F_Dust_Sensor.pdf)
 
     * Wire 1 - Blue is connected to power through the resistor and ground via the capacitor.
     * Wire 2 - Green is wired directly to ground
@@ -81,6 +81,8 @@ Alternatively, you can also run the test code included on this Github to see the
 
 
 ## Making it portable : Saving your data to SD cards
+
+![Image of Dust sensor, OLED, SD card setup](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/ASSL_workshop_complete_bb.png)
 
 1. Setup the wiring for your SD card module.
 2. Check the Arduino SD library. [You can find more documentation on the SD card library here.](https://www.arduino.cc/en/reference/SD)  Open code example in the Arduino SD library titled "Datalogger" (File > Examples > SD > Datalogger).  Run the example code and check the serial port to make sure your card is initializing properly.  You should see some sort of random number output.
