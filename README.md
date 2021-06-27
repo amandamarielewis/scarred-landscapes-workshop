@@ -85,7 +85,7 @@ Alternatively, you can also run the test code included on this Github to see the
 ![Image of Dust sensor, OLED, SD card setup](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/ASSL_workshop_complete_bb.png)
 
 1. Setup the wiring for your SD card module.
-2. Check the Arduino SD library. [You can find more documentation on the SD card library here.](https://www.arduino.cc/en/reference/SD)  Open code example in the Arduino SD library titled "Datalogger" (File > Examples > SD > Datalogger).  Run the example code and check the serial port to make sure your card is initializing properly.  You should see some sort of random number output.
+2. Check the Arduino SD library. [You can find more documentation on the SD card library here.](https://www.arduino.cc/en/reference/SD)  Open code example in the Arduino SD library titled "CardInfo" (File > Examples > SD > CardInfo).  Run the example code and check the serial port to make sure your card is initializing properly.
 3. Check the SD card in your computer to make sure the data file is there and has been written. 
 
 ## Issues

@@ -1,3 +1,4 @@
+//Libraries included in the sketch
 #include <GP2YDustSensor.h>
 
 const uint8_t SHARP_LED_PIN = 10;   // Sharp Dust/particle sensor Led Pin (White wire)
