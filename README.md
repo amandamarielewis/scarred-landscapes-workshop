@@ -65,7 +65,7 @@ If all is working well, we're going to make a new Arduino file which will eventu
 
 
 1. Wiring for OLED screen
-2. Install the U8G2 library (Sketch > Include Library > Manage Libraries > Search for "U8G2lib" and install).
+2. Install the U8G2 library (Sketch > Include Library > Manage Libraries > Search for "U8G2" and install). Install also the U8Glib library (Sketch > Include Library > Manage Libraries > Search for "U8Glib" and install)
 
 ![Image of U8G2 library](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/OLEDArduinoLibrary.png)
 
@@ -91,3 +91,5 @@ Alternatively, you can also run the test code included on this Github to see the
 ## Issues
 
 Any common issues or bug fixes will be noted here.
+
+* Was previously missing instruction to add the U8Glib for the OLED screen.
