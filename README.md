@@ -56,7 +56,7 @@ If needed, solder the wires onto the extra pins that come with your Arduino and 
 
 You should now see your sensor output! 
 
-If all is working well, we're going to make a new Arduino file which will eventually be our final code file that will include all of the elements covered in this workshop.
+If all is working well, we're going to make a new Arduino file which will eventually be our final code file that will include all of the elements covered in this workshop.  You can basically copy and paste this code into a new file, and we'll continue to add to it.
 
 
 ## Seeing up your screen : Connecting the OLED screen
@@ -69,7 +69,7 @@ If all is working well, we're going to make a new Arduino file which will eventu
 
 ![Image of U8G2 library](https://github.com/amandamarielewis/scarred-landscapes-workshop/blob/main/images/OLEDArduinoLibrary.png)
 
-3. Open the PrintTest example from the library. Copy and paste the following underneath the #include and run the code.
+3. Open the PrintTest example from the library. Copy and paste the following underneath the #include and run the code. 
 
 ```
 U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_DEV_0|U8G_I2C_OPT_FAST);	// Dev 0, Fast I2C / TWI
@@ -77,7 +77,7 @@ U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_DEV_0|U8G_I2C_OPT_FAST);	// Dev 0, Fast I2C
 You should see "Hello World!" written on your screen.
 Alternatively, you can also run the test code included on this Github to see the full extend of what kinds of animations and characters you can use on the OLED screens.
 
-4. Now, we are going to have the data we got from our dust sensors write onto the OLED screens.
+4. Now, we are going to have the data we got from our dust sensors write onto the OLED screens. 
 
 
 ## Making it portable : Saving your data to SD cards
