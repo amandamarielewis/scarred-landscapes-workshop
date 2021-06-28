@@ -93,3 +93,5 @@ Alternatively, you can also run the test code included on this Github to see the
 Any common issues or bug fixes will be noted here.
 
 * Was previously missing instruction to add the U8Glib for the OLED screen.
+
+* Pinout on the OLED screen is different from the diagram. the 5V and GND pins are switched, so make sure the VCC pin is connected to the power (+) and the GND pin is connected to the ground (-).
